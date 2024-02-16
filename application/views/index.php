@@ -43,6 +43,13 @@
 		</script>
 	</head>
 	<body>
+		<form action="/charges/index" method="post">
+			<label for="start">Start date: </label>
+			<input type="date" name="start">
+			<label for="end">End date: </label>
+			<input type="date" name="end">
+			<input type="submit" value="Show">
+		</form>
 		<!-- Table below -->
 		<p>List of total charges per month: </p>
 			<table style="border-collapse: collapse" border=1>
@@ -58,7 +65,7 @@
 						<td><?= $charge['year'] ?></td>
 						<td><?= $charge['total_cost'] ?></td>
 					</tr>
-<?php			}?>
+<?php			}	?>
 			</table>
 
 		<!-- chart below -->

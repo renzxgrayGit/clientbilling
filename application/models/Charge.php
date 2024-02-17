@@ -22,7 +22,6 @@ class Charge extends CI_Model
             // Execute the SQL query without filtering if start or end date is not provided
             $query = $this->db->query($sql);
         }
-        var_dump($sql);
 
         // Return the result array
         return $query->result_array();
